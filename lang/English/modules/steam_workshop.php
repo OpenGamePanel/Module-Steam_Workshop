@@ -48,7 +48,7 @@ define('OGP_LANG_mods_backreference_index_info', "The position of the back refer
 define('OGP_LANG_variable', "Variable");
 define('OGP_LANG_variable_info', "The variable that cointains the mods list, if any.");
 define('OGP_LANG_place_after', "Place after");
-define('OGP_LANG_place_after_info', "The section of the configuration file where the mods list appears, if any. Add a new line character if needed (\\n).");
+define('OGP_LANG_place_after_info', "The section of the configuration file where the mods list appears, if any. It will be added to the config file if does not exists yet. If the given variable is not present then it will be placed in the line after this section.");
 define('OGP_LANG_mod_string', "Mod string");
 define('OGP_LANG_mod_string_info', "The string that represents the mod in the mod list. Valid replacements: %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by steamcmd)");
 define('OGP_LANG_string_separator', "String separator");
