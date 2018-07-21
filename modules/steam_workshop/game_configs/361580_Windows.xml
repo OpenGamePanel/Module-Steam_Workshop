@@ -6,7 +6,7 @@
   <mods_path>mods</mods_path>
   <mods/>
   <config>
-    <regex>mods=(([0-9]+,?)*)</regex>
+    <regex>mods=(([0-z]+,?)*)</regex>
     <mods_backreference_index>1</mods_backreference_index>
     <variable>mods=</variable>
     <place_after/>
@@ -14,8 +14,7 @@
     <string_separator>,</string_separator>
     <filepath>server_config.cfg</filepath>
   </config>
-  <post_install>sed -i 's/\#mods=example,my_mod/mods=/g' %mods_full_path%/../server_config.cfg&#xD;
-printf "\nMoving item %workshop_mod_id% ..."&#xD;
+  <post_install>printf "\nMoving item %workshop_mod_id% ..."&#xD;
 cp -Rf "%mods_full_path%/steamapps/workshop/content/228380/%workshop_mod_id%" "%mods_full_path%/."&#xD;
 rm -Rf "%mods_full_path%/steamapps/workshop/content/228380/%workshop_mod_id%"&#xD;
 printf "\nSuccess."</post_install>
