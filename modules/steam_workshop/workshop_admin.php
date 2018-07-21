@@ -243,14 +243,11 @@ function exec_ogp_module()
 		$ft->add_field_hidden('filepath',$filepath);
 		$ft->add_field_hidden('post_install',$post_install);
 		$ft->add_field_hidden('uninstall',$uninstall);
-		echo "</td></tr>";
-		if(count($xml->mods->mod) > 0)
-		{
-			echo '<tr><td colspan=2><div id="scrolling_checkbox">';
-			foreach($xml->mods->mod as $mod)
-				echo "<input type='checkbox' id='select_mod_$mod[id]' name='workshop_mod_id[]' value='$mod[id]'><label for='select_mod_$mod[id]'>".$mod->name."</label><br>";
-			echo '</div></td></tr>';
-		}			
+		echo "</td></tr>".
+			 '<tr><td colspan=2><div id="scrolling_checkbox">';
+		foreach($xml->mods->mod as $mod)
+			echo "<input type='checkbox' id='select_mod_$mod[id]' name='workshop_mod_id[]' value='$mod[id]'><label for='select_mod_$mod[id]'>".$mod->name."</label><br>";
+		echo '</div></td></tr>';
 		$ft->end_table();
 		$ft->add_button("submit","remove_mods",get_lang('remove_mods'));
 		$ft->end_form();
