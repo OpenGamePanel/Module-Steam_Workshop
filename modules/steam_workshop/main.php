@@ -25,7 +25,7 @@ require_once("includes/lib_remote.php");
 require_once("modules/config_games/server_config_parser.php");
 require_once("modules/steam_workshop/functions.php");
 require_once('includes/form_table_class.php');
-	 '<link rel="stylesheet" type="text/css" href="css/xbbcode/xbbcode.css">'."\n".
+echo	 '<link rel="stylesheet" type="text/css" href="css/xbbcode/xbbcode.css">'."\n".
 	 '<script type="text/javascript" src="js/xbbcode/xbbcode.js"></script>'."\n".
 	 '<script type="text/javascript" src="js/modules/steam_workshop.js"></script>';
 
