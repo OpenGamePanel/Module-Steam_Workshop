@@ -23,7 +23,6 @@
  */
 require_once('includes/form_table_class.php');
 require_once("modules/steam_workshop/functions.php");
-echo '<link rel="stylesheet" type="text/css" href="modules/steam_workshop/steam_workshop.css">';
 function exec_ogp_module()
 {
 	
