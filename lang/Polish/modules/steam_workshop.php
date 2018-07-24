@@ -23,22 +23,22 @@
  */
 define('OGP_LANG_game', "Game");
 define('OGP_LANG_select_mod', "Select mod");
-define('OGP_LANG_manual_workshop_mod_id', "Manual workshop mod id");
+define('OGP_LANG_manual_workshop_mod_id', "Manual Workshop mod ID");
 define('OGP_LANG_manual_workshop_mod_id_info', "You'll find the mod id at the URL of the mod, for example 1379153273 for ARK: Survival Evolved's Solar Panel. You can install multiple mods separating them by coma.");
 define('OGP_LANG_update_in_progress', "Update in progress");
-define('OGP_LANG_refresh_steam_workshop_status', "Refresh steam workshop status");
+define('OGP_LANG_refresh_steam_workshop_status', "Refresh Steam Workshop status");
 define('OGP_LANG_update_completed', "Update completed");
-define('OGP_LANG_mod_does_not_belong_to_workshop', "The mod %s does not belong to the workshop");
+define('OGP_LANG_mod_does_not_belong_to_workshop', "The mod %s does not belong to the Workshop");
 define('OGP_LANG_mod_installation_started', "Mod installation started");
-define('OGP_LANG_failed_to_start_steam_workshop', "Failed to start steam workshop");
+define('OGP_LANG_failed_to_start_steam_workshop', "Failed to start Steam Workshop");
 define('OGP_LANG_connection_error', "Connection error");
 define('OGP_LANG_install_mod', "Install mods");
 define('OGP_LANG_show_mod_info', "Show mods info");
 define('OGP_LANG_select_game', "Select game");
 define('OGP_LANG_save_config', "Save config");
 define('OGP_LANG_mod_key_not_found_from_xml', "Mod key %s not found from xml.");
-define('OGP_LANG_workshop_id', "Workshop id");
-define('OGP_LANG_workshop_id_info', "You'll find the workshop id at the URL of the workshop, for example 440900 for Conan Exiles");
+define('OGP_LANG_workshop_id', "Workshop ID");
+define('OGP_LANG_workshop_id_info', "You'll find the Workshop ID at the URL of the Workshop, for example 440900 for Conan Exiles");
 define('OGP_LANG_mods_path', "Mods path");
 define('OGP_LANG_mods_path_info', "The relative path for the mods folder.");
 define('OGP_LANG_regex', "Regex");
@@ -50,13 +50,13 @@ define('OGP_LANG_variable_info', "The variable that cointains the mods list, if 
 define('OGP_LANG_place_after', "Place after");
 define('OGP_LANG_place_after_info', "The section of the configuration file where the mods list appears, if any. It will be added to the config file if does not exists yet. If the given variable is not present then it will be placed in the line after this section.");
 define('OGP_LANG_mod_string', "Mod string");
-define('OGP_LANG_mod_string_info', "The string that represents the mod in the mod list. Valid replacements: %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by steamcmd)");
+define('OGP_LANG_mod_string_info', "The string that represents the mod in the mod list. Valid replacements: %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by SteamCMD)");
 define('OGP_LANG_string_separator', "String separator");
 define('OGP_LANG_string_separator_info', "The character that separates the mods in the configuration file, for example new line character (\\n) or coma (,).");
 define('OGP_LANG_filepath', "File path");
 define('OGP_LANG_filepath_info', "The path of the configuration file where the mods must be listed.");
 define('OGP_LANG_post_install', "Post install script");
-define('OGP_LANG_post_install_info', "The necessary commands, in bash, to move the mods to the mods folder, Valid replacements: %mods_full_path% (the full path to the wokshop mods folder),  %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by steamcmd)");
+define('OGP_LANG_post_install_info', "The necessary commands in bash to move the mods to the mods folder. Valid replacements: %mods_full_path% (the full path to the Wokshop mods folder), %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by SteamCMD)");
 define('OGP_LANG_install_mods', "Install mods");
 define('OGP_LANG_uninstall_mods', "Uninstall mods");
 define('OGP_LANG_failed_uninstalling_mod', "Failed uninstalling mod %s");
@@ -70,4 +70,5 @@ define('OGP_LANG_workshop_configuration_not_found', "Workshop configuration not 
 define('OGP_LANG_download_method', "Download method");
 define('OGP_LANG_anonymous_login', "Anonymous login");
 define('OGP_LANG_select_at_least_one_mod_or_enter_mod_id', "Select at least one mod or enter a mod id.");
+define('OGP_LANG_no_game_servers_assigned', "You don't have any servers assigned to your account.");
 ?>

@@ -30,7 +30,7 @@ define('OGP_LANG_refresh_steam_workshop_status', "Refrescar estado de Steam Work
 define('OGP_LANG_update_completed', "<b>Actualización completa.</b>");
 define('OGP_LANG_mod_does_not_belong_to_workshop', "El mod %s no pertenece al Workshop.");
 define('OGP_LANG_mod_installation_started', "Instalación del mod iniciada.");
-define('OGP_LANG_failed_to_start_steam_workshop', "Fallo al iniciar Steam Workshop");
+define('OGP_LANG_failed_to_start_steam_workshop', "Fallo al iniciar Steam Workshop.");
 define('OGP_LANG_connection_error', "Error de conexión");
 define('OGP_LANG_install_mod', "Instalar mods");
 define('OGP_LANG_show_mod_info', "Mostrar información de los mods");
@@ -50,24 +50,25 @@ define('OGP_LANG_variable_info', "La variable que contiene la lista de mods, si 
 define('OGP_LANG_place_after', "Poner después de");
 define('OGP_LANG_place_after_info', "La sección del archivo de configuración donde la lista de mods aparece, si existiera. Ésta será añadida si no existe aún. Si la variable no está presente entonces esta será añadida en la linea siguiente a ésta etiqueta de sección.");
 define('OGP_LANG_mod_string', "Cadena de mod");
-define('OGP_LANG_mod_string_info', "Esta cadena representa el mod en la lista de mods. Reemplazos validos: %workshop_mod_id%, %first_file% (first_file es el primer archivo encontrado en la carpeta descargada por steamcmd)");
+define('OGP_LANG_mod_string_info', "Esta cadena representa el mod en la lista de mods. Reemplazos validos: %workshop_mod_id%, %first_file% (first_file es el primer archivo encontrado en la carpeta descargada por SteamCMD)");
 define('OGP_LANG_string_separator', "Separador de cadenas");
 define('OGP_LANG_string_separator_info', "Es el carácter que separa los mods in la lista de mods del archivo de configuración, por ejemplo un carácter de nueva linea (\\n) o una coma (,).");
 define('OGP_LANG_filepath', "Ruta del archivo");
 define('OGP_LANG_filepath_info', "La ruta relativa al archivo de configuración donde los mods deben ser listados.");
-define('OGP_LANG_post_install', "Script post-instalación(bash)");
-define('OGP_LANG_post_install_info', "Los comandos necesarios, en bash, para mover los mods a la carpeta de destino, Reemplazos validos: %mods_full_path% (la ruta completa a la carpeta de mods), %workshop_mod_id%, %first_file% (first_file es el primer archivo encontrado en la carpeta del mod descargado por steamcmd)");
+define('OGP_LANG_post_install', "Script post-instalación");
+define('OGP_LANG_post_install_info', "Los comandos necesarios, en bash, para mover los mods a la carpeta de destino, Reemplazos validos: %mods_full_path% (la ruta completa a la carpeta de mods), %workshop_mod_id%, %first_file% (first_file es el primer archivo encontrado en la carpeta del mod descargado por SteamCMD)");
 define('OGP_LANG_install_mods', "Instalar mods");
 define('OGP_LANG_uninstall_mods', "Desinstalar mods");
 define('OGP_LANG_failed_uninstalling_mod', "Falló la desinstalación del mod %s");
 define('OGP_LANG_uninstall', "Script de desinstalación");
 define('OGP_LANG_uninstall_info', "Se llama a este script cuando un mod es desinstalado. Reemplazos validos: %mods_full_path% (la ruta completa a la carpeta de mods del workshop), %mod_string% (mod string es el nombre listado en el archivo de configuración para este mod).");
 define('OGP_LANG_remove_mods', "Eliminar Mods");
-define('OGP_LANG_do_not_close_this_page_while_mods_are_being_installed', "No cierre la pagina mientras los mods están siendo instalados (deprecated)");
+define('OGP_LANG_do_not_close_this_page_while_mods_are_being_installed', "No cierre la pagina mientras los mods están siendo instalados");
 define('OGP_LANG_no_game_server_selected', "No ha seleccionado ningún servidor");
 define('OGP_LANG_there_are_no_mods_installed_on_this_game_server', "No hay mods instalados en este servidor de juegos");
 define('OGP_LANG_workshop_configuration_not_found', "No se encontró configuración de Workshop para este juego");
 define('OGP_LANG_download_method', "Método de descarga");
 define('OGP_LANG_anonymous_login', "Inicio de sesión anonimo");
 define('OGP_LANG_select_at_least_one_mod_or_enter_mod_id', "Seleccione al menos un mod o introduzca un ID de mod ");
+define('OGP_LANG_no_game_servers_assigned', "No tiene ningún servidor asignado a su cuenta.");
 ?>

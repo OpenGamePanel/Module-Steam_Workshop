@@ -23,22 +23,22 @@
  */
 define('OGP_LANG_game', "Jogo");
 define('OGP_LANG_select_mod', "Selecionar mod");
-define('OGP_LANG_manual_workshop_mod_id', "ID manual da oficina");
+define('OGP_LANG_manual_workshop_mod_id', "Manual Workshop mod ID");
 define('OGP_LANG_manual_workshop_mod_id_info', "Você irá encontrar o ID na URL do mod, por exemplo: 1379153273 para ARK:Survival Evolved's Painel Solar. Você pode instalar vários mods, cada um separado por virgula.");
 define('OGP_LANG_update_in_progress', "Atualização em progresso");
-define('OGP_LANG_refresh_steam_workshop_status', "Atualizar Status da oficina steam");
+define('OGP_LANG_refresh_steam_workshop_status', "Refresh Steam Workshop status");
 define('OGP_LANG_update_completed', "Atualização Completa");
-define('OGP_LANG_mod_does_not_belong_to_workshop', "O mod %s não pertence a oficina");
+define('OGP_LANG_mod_does_not_belong_to_workshop', "The mod %s does not belong to the Workshop");
 define('OGP_LANG_mod_installation_started', "Instalação do mod iniciada");
-define('OGP_LANG_failed_to_start_steam_workshop', "Falha ao iniciar a oficina steam");
+define('OGP_LANG_failed_to_start_steam_workshop', "Failed to start Steam Workshop");
 define('OGP_LANG_connection_error', "Erro de conexão ");
 define('OGP_LANG_install_mod', "Instalar mods");
 define('OGP_LANG_show_mod_info', "Mostrar informações do mod");
 define('OGP_LANG_select_game', "Selecionar Game");
 define('OGP_LANG_save_config', "Salvar configuração ");
 define('OGP_LANG_mod_key_not_found_from_xml', "Chave do mod %s não encontrado no xml.");
-define('OGP_LANG_workshop_id', "ID da oficina");
-define('OGP_LANG_workshop_id_info', "Você irá encontrar o ID da oficina na URL da oficina, por exemplo 440900 para Conan Exiles");
+define('OGP_LANG_workshop_id', "Workshop ID");
+define('OGP_LANG_workshop_id_info', "You'll find the Workshop ID at the URL of the Workshop, for example 440900 for Conan Exiles");
 define('OGP_LANG_mods_path', "Caminho do mod");
 define('OGP_LANG_mods_path_info', "O Caminho Atual da pasta dos mods");
 define('OGP_LANG_regex', "Regex");
@@ -50,13 +50,13 @@ define('OGP_LANG_variable_info', "A variável que contem a lista de mods, se hou
 define('OGP_LANG_place_after', "Coloque Após");
 define('OGP_LANG_place_after_info', "A seção do arquivo de configuração onde a lista de mods aparece, se houver. Ele será adicionado ao arquivo de configuração, se ainda não existir. Se a variável fornecida não estiver presente, ela será colocada na linha após esta seção.");
 define('OGP_LANG_mod_string', "Mod string");
-define('OGP_LANG_mod_string_info', "A string que representa o mod na lista de mod. Substituições válidas: %workshop_mod_id%,%f irst_file% (o primeiro arquivo é o primeiro encontrado na pasta mod baixada pelo steamcmd)");
+define('OGP_LANG_mod_string_info', "The string that represents the mod in the mod list. Valid replacements: %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by SteamCMD)");
 define('OGP_LANG_string_separator', "Separador de string");
 define('OGP_LANG_string_separator_info', "O caractere que separa os mods no arquivo de configuração, por exemplo, caractere de nova linha (\\ n) ou virgula (,).");
 define('OGP_LANG_filepath', "Caminho do arquivo");
 define('OGP_LANG_filepath_info', "O caminho do arquivo de configuração onde os mods tem de ser listados.");
 define('OGP_LANG_post_install', "Script de pós-instalação");
-define('OGP_LANG_post_install_info', "Os comandos necessários, em bash, para mover os mods para a pasta dos mods, substituição valida: %mods_full_path% (o caminho completo para a pasta mods da oficina), %workshop_mod_id%, %first_file% (o primeiro arquivo é o arquivo encontrado na pasta de mod baixado pelo steamsmd)");
+define('OGP_LANG_post_install_info', "The necessary commands in bash to move the mods to the mods folder. Valid replacements: %mods_full_path% (the full path to the Wokshop mods folder), %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by SteamCMD)");
 define('OGP_LANG_install_mods', "Instalar mods");
 define('OGP_LANG_uninstall_mods', "Desinstalar mods");
 define('OGP_LANG_failed_uninstalling_mod', "Falha ao desinstalar o mod %s");
@@ -70,4 +70,5 @@ define('OGP_LANG_workshop_configuration_not_found', "Configuração da oficina n
 define('OGP_LANG_download_method', "Método de download");
 define('OGP_LANG_anonymous_login', "Login Anônimo");
 define('OGP_LANG_select_at_least_one_mod_or_enter_mod_id', "Selecione pelo menos um mod ou insira um ID de mod.");
+define('OGP_LANG_no_game_servers_assigned', "You don't have any servers assigned to your account.");
 ?>
