@@ -52,6 +52,8 @@ function exec_ogp_module()
 			 "</ul>";
 	}
 	
+	$isAdmin = $db->isAdmin( $_SESSION['user_id'] );
+	
 	if($isAdmin) 
 		$home_cfg = $db->getGameHome($home_id);
 	else

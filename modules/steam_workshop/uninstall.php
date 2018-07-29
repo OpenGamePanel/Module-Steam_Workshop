@@ -36,7 +36,7 @@ function exec_ogp_module()
 		list($home_id, $mod_id, $ip, $port) = explode("-", $_GET['home_id-mod_id-ip-port']);
 	else
 	{
-		print_failure(get_lang('no_game_homes_assigned'));
+		print_failure(get_lang('no_game_servers_assigned'));
 		return;
 	}
 	
@@ -47,6 +47,8 @@ function exec_ogp_module()
 			 "<li><a href='?m=gamemanager&p=game_monitor&home_id-mod_id-ip-port=".$_GET['home_id-mod_id-ip-port']."'>".get_lang('back')."</a></li>".
 			 "</ul>";
 	}
+	
+	$isAdmin = $db->isAdmin( $_SESSION['user_id'] );
 	
 	if($isAdmin) 
 		$home_cfg = $db->getGameHome($home_id);
