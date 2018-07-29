@@ -25,7 +25,7 @@ require_once("includes/lib_remote.php");
 require_once("modules/config_games/server_config_parser.php");
 require_once("modules/steam_workshop/functions.php");
 require_once('includes/form_table_class.php');
-echo	 '<link rel="stylesheet" type="text/css" href="css/xbbcode/xbbcode.css">'."\n".
+echo '<link rel="stylesheet" type="text/css" href="css/xbbcode/xbbcode.css">'."\n".
 	 '<script type="text/javascript" src="js/xbbcode/xbbcode.js"></script>'."\n".
 	 '<script type="text/javascript" src="js/modules/steam_workshop.js"></script>';
 
@@ -35,53 +35,21 @@ function exec_ogp_module()
 	Global $db,$view,$settings;
 	echo '<h2>Steam Workshop</h2>';
 	define('CONFIGS', "modules/steam_workshop/game_configs/");
-	
-	$isAdmin = $db->isAdmin($_SESSION['user_id']);
-	if($isAdmin)
-		$server_homes = $db->getHomesFor('admin', $_SESSION['user_id']);
-	else	
-		$server_homes = $db->getHomesFor('user_and_group', $_SESSION['user_id']);
-	
-	if(empty($server_homes))
+		
+	if(isset($_GET['home_id-mod_id-ip-port']) && $_GET['home_id-mod_id-ip-port'] != "")
+		list($home_id, $mod_id, $ip, $port) = explode("-", $_GET['home_id-mod_id-ip-port']);
+	else
 	{
 		print_failure(get_lang('no_game_servers_assigned'));
 		return;
 	}
-	else
+	
+	if(!isset($_POST['workshop_mod_id']) and !isset($_GET['show_log']) and !isset($_POST['manual_workshop_mod_id']))
 	{
-		if(!isset($_POST['workshop_mod_id']) and !isset($_GET['show_log']) and !isset($_POST['manual_workshop_mod_id']))
-		{
-			$home_string = (isset($_GET['home_id-mod_id-ip-port']) && $_GET['home_id-mod_id-ip-port'] != "")?"&home_id-mod_id-ip-port=".$_GET['home_id-mod_id-ip-port']:"";
-			echo "<ul><li><a href='?m=steam_workshop&p=uninstall$home_string'>".get_lang('uninstall_mods')."</a></li></ul>";
-			$games[''] = get_lang('select_game');
-			foreach($server_homes as $server_home)
-			{
-				$server_xml = read_server_config(SERVER_CONFIG_LOCATION."/".$server_home['home_cfg_file']);
-				if(isset($server_xml->installer) and $server_xml->installer == "steamcmd")
-				{
-					$mod_xml = xml_get_mod($server_xml, $server_home['mod_key']);
-					if(isset($mod_xml->installer_name) and !in_array((string)$mod_xml->installer_name, get_blacklist()))
-						$games["$server_home[home_id]-$server_home[mod_id]-$server_home[ip]-$server_home[port]"] = $server_home['home_name'];
-				}
-			}
-			
-			$ft = new FormTable();
-			$ft->start_form("home.php", "get");
-			$ft->start_table();
-			$ft->add_field_hidden('m', $_GET['m']);
-			$ft->add_field_hidden('p', $_GET['p']);
-			$ft->add_custom_field('game', create_drop_box_from_array_onchange($games,"home_id-mod_id-ip-port",@$_GET['home_id-mod_id-ip-port']));
-			$ft->end_table();
-			$ft->end_form();
-		}
-		
-		if(isset($_GET['home_id-mod_id-ip-port']) && $_GET['home_id-mod_id-ip-port'] != "")
-			list($home_id, $mod_id, $ip, $port) = explode("-", $_GET['home_id-mod_id-ip-port']);
-		else
-		{
-			print_failure(get_lang('no_game_server_selected'));
-			return;
-		}
+		echo "<ul>".
+			 "<li><a href='?m=steam_workshop&p=uninstall&home_id-mod_id-ip-port=".$_GET['home_id-mod_id-ip-port']."'>".get_lang('uninstall_mods')."</a></li>".
+			 "<li><a href='?m=gamemanager&p=game_monitor&home_id-mod_id-ip-port=".$_GET['home_id-mod_id-ip-port']."'>".get_lang('back')."</a></li>".
+			 "</ul>";
 	}
 	
 	if($isAdmin) 
