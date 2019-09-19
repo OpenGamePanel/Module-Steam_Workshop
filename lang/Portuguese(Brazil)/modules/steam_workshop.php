@@ -26,7 +26,7 @@ define('OGP_LANG_select_mod', "Selecionar mod");
 define('OGP_LANG_manual_workshop_mod_id', "Manual Workshop mod ID");
 define('OGP_LANG_manual_workshop_mod_id_info', "Você irá encontrar o ID na URL do mod, por exemplo: 1379153273 para ARK:Survival Evolved's Painel Solar. Você pode instalar vários mods, cada um separado por virgula.");
 define('OGP_LANG_update_in_progress', "Atualização em progresso");
-define('OGP_LANG_refresh_steam_workshop_status', "Refresh Steam Workshop status");
+define('OGP_LANG_refresh_steam_workshop_status', "Atualizar status do Steam Workshop");
 define('OGP_LANG_update_completed', "Atualização Completa");
 define('OGP_LANG_mod_does_not_belong_to_workshop', "The mod %s does not belong to the Workshop");
 define('OGP_LANG_mod_installation_started', "Instalação do mod iniciada");
