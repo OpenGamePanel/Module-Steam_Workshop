@@ -24,7 +24,7 @@
 define('OGP_LANG_game', "משחק");
 define('OGP_LANG_select_mod', "בחר מוד");
 define('OGP_LANG_manual_workshop_mod_id', "מזהה מוד workshop ידני");
-define('OGP_LANG_manual_workshop_mod_id_info', "You'll find the mod id at the URL of the mod, for example 1379153273 for ARK: Survival Evolved's Solar Panel. You can install multiple mods separating them by coma.");
+define('OGP_LANG_manual_workshop_mod_id_info', "אתה תמצא את מזהה המוד בקישור של המוד, לדוגמה: 1379153273 בשביל ARK: Survival Evolved's Solar Panel אתה  יכול להתקין כמה מודים, ולהפריד אותם באמצעות פסיק.");
 define('OGP_LANG_update_in_progress', "עדכון בתהליך");
 define('OGP_LANG_refresh_steam_workshop_status', "רענן את מצב סטים workshop");
 define('OGP_LANG_update_completed', "עדכון הושלם");
