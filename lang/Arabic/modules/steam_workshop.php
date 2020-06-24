@@ -67,7 +67,7 @@ define('OGP_LANG_do_not_close_this_page_while_mods_are_being_installed', "Do not
 define('OGP_LANG_no_game_server_selected', "لم يتم تحديد خادم اللعبة");
 define('OGP_LANG_there_are_no_mods_installed_on_this_game_server', "There are no mods installed on this game server");
 define('OGP_LANG_workshop_configuration_not_found', "Workshop configuration not found");
-define('OGP_LANG_download_method', "Download Method");
+define('OGP_LANG_download_method', "طريقة التحميل");
 define('OGP_LANG_anonymous_login', "تسجيل دخول كمجهول");
 define('OGP_LANG_select_at_least_one_mod_or_enter_mod_id', "Select at least one mod or enter a mod ID.");
 define('OGP_LANG_no_game_servers_assigned', "ليس لديك أي خوادم مخصصة لحسابك.");
