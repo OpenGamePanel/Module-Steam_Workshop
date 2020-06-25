@@ -24,7 +24,7 @@
 define('OGP_LANG_game', "Jeu");
 define('OGP_LANG_select_mod', "Sélectionnez le mod");
 define('OGP_LANG_manual_workshop_mod_id', "ID du mod Workshop ");
-define('OGP_LANG_manual_workshop_mod_id_info', "Vous trouverez l&apos;ID du mod dans l&apos;URL du mod, par exemple 1379153273 pour ARK: Survival Evolved's Solar Panel. Vous pouvez installer plusieurs mods en les séparant par une virgule.");
+define('OGP_LANG_manual_workshop_mod_id_info', "Vous trouverez l&apos;ID du mod dans l&apos;URL du mod, par exemple 1379153273 pour ARK: Survival Evolved&apos;s Solar Panel. Vous pouvez installer plusieurs mods en les séparant par une virgule.");
 define('OGP_LANG_update_in_progress', "Mise à jour en cours");
 define('OGP_LANG_refresh_steam_workshop_status', "Actualiser l&apos;état de Steam Workshop");
 define('OGP_LANG_update_completed', "Mise à jour terminée");
@@ -48,7 +48,7 @@ define('OGP_LANG_mods_backreference_index_info', "La position de la référence 
 define('OGP_LANG_variable', "Variable");
 define('OGP_LANG_variable_info', "La variable qui contient la liste des mods, si applicable.");
 define('OGP_LANG_place_after', "Placer après");
-define('OGP_LANG_place_after_info', "La section du fichier de configuration où la liste des mods apparaît, le cas échéant. Il sera ajouté au fichier de configuration s&apos;il n'existe pas encore. Si la variable donnée n'est pas présente, elle sera placée dans la ligne après cette section.");
+define('OGP_LANG_place_after_info', "La section du fichier de configuration où la liste des mods apparaît, le cas échéant. Il sera ajouté au fichier de configuration s&apos;il n&apos;existe pas encore. Si la variable donnée n&apos;est pas présente, elle sera placée dans la ligne après cette section.");
 define('OGP_LANG_mod_string', "Chaine du mod");
 define('OGP_LANG_mod_string_info', "La chaine qui représente le mod dans la liste des mods. Remplacements valides: %workshop_mod_id%, %first_file% (first file est le premier fichier trouvé dans le dossier du mod téléchargé par SteamCMD)");
 define('OGP_LANG_string_separator', "Séparateur de chaine");
