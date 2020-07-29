@@ -34,8 +34,8 @@ define('OGP_LANG_failed_to_start_steam_workshop', "Failed to start Steam Worksho
 define('OGP_LANG_connection_error', "Erro de conexão ");
 define('OGP_LANG_install_mod', "Instalar mods");
 define('OGP_LANG_show_mod_info', "Mostrar informações do mod");
-define('OGP_LANG_select_game', "Select Game");
-define('OGP_LANG_save_config', "Save Config");
+define('OGP_LANG_select_game', "Selecionar Jogo");
+define('OGP_LANG_save_config', "Salvar Configurações");
 define('OGP_LANG_mod_key_not_found_from_xml', "Chave do mod %s não encontrado no xml.");
 define('OGP_LANG_workshop_id', "Workshop ID");
 define('OGP_LANG_workshop_id_info', "You'll find the Workshop ID at the URL of the Workshop, for example 440900 for Conan Exiles");
