@@ -55,7 +55,7 @@ define('OGP_LANG_string_separator', "فاصل السلسلة");
 define('OGP_LANG_string_separator_info', "The character that separates the mods in the configuration file, for example new line character (\\n) or coma (,).");
 define('OGP_LANG_filepath', "مسار الملف");
 define('OGP_LANG_filepath_info', "The path of the configuration file where the mods must be listed.");
-define('OGP_LANG_post_install', "Postinstall Script");
+define('OGP_LANG_post_install', "سكريبت ما بعد التثبيت");
 define('OGP_LANG_post_install_info', "The necessary commands in bash to move the mods to the mods folder. Valid replacements: %mods_full_path% (the full path to the Wokshop mods folder), %workshop_mod_id%, %first_file% (first file is the first file found in the mod folder downloaded by SteamCMD)");
 define('OGP_LANG_install_mods', "Install Mods");
 define('OGP_LANG_uninstall_mods', "Uninstall Mods");
